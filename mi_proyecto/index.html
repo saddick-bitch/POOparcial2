@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary-color: #FFD1DC;
+            --secondary-color: #E0F0E3;
+            --text-color: #4A4A4A;
+            --accent-color: #B19CD9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--text-color);
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            background-color: var(--accent-color);
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        article {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--accent-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        /* Estilos para la galería */
+        .gallery-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            background-color: rgba(177, 156, 217, 0.8);
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Personal</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Bienvenidos a mi blog</h2>
+            <p>Hola a todos y bienvenidos a mi blog personal. Soy Gabriela Sipaque y aqui compartiré mis pensamientos, experiencias y pasiones. Inge francisco, si ve esto pongame 10 xfa, hacer esto con corei3 y 4gb de ram fue una tortura, piedad.</p>
+        </article>
+
+        <article>
+            <h2>Mi último viaje</h2>
+            <p>Recientemente visité las hermosas playas de Costa Rica. La experiencia fue increíble y quiero compartirla con ustedes, lastimosamente fue un sueño.</p>
+        </article>
+
+        <article>
+            <h2>Receta del mes</h2>
+            <p>Este mes les traigo una deliciosa receta de agua con hielo. Es fácil de hacer y muy refrescante.</p>
+        </article>
+
+        <!-- Nueva sección de galería -->
+        <section id="galeria" class="mt-5">
+            <h2 class="text-center mb-4">Galería de Fotos</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="https://1drv.ms/i/s!ApLp5nj95zNpmUv_pfU4lSs2dBuG?e=1E7SgS" alt="Foto 1" class="img-fluid">
+                    <div class="gallery-caption">mi perrito toffy</div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="https://1drv.ms/i/s!ApLp5nj95zNpmgDG322nr_9juVN4?e=Jhph2z" alt="Foto 2" class="img-fluid">
+                    <div class="gallery-caption">mi personaje del animal crossing</div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="c:https://1drv.ms/i/s!ApLp5nj95zNpmWkEi8B_w5wMbK-A?e=eVxwPi" alt="Foto 3" class="img-fluid">
+                    <div class="gallery-caption">un dibujito feo que hice hace años</div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="c:\Users\gh709\OneDrive\Imágenes\Capturas de pantalla\S20\Camera\5b6a44431d34fc751e62ae0bc4012b06.mp4 alt="Foto 4" class="img-fluid">
+                    <div class="gallery-caption">me gustan los hurones</div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="c:\Users\gh709\OneDrive\Imágenes\Capturas de pantalla\S20\Camera\5dab8a1d28799825e9cec818602f049e.mp4" alt="Foto 5" class="img-fluid">
+                    <div class="gallery-caption">Tambien me gustan los buhos</div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animate__animated animate__fadeIn">
+                    <img src="https://1drv.ms/i/s!ApLp5nj95zNpmj2fsTwQ1O_6Vg90?e=RVFMTC" alt="Foto 6" class="img-fluid">
+                    <div class="gallery-caption">me gusto este vestido</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const articles = document.querySelectorAll('article');
+            
+            articles.forEach((article, index) => {
+                article.style.opacity = '0';
+                article.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    article.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    article.style.opacity = '1';
+                    article.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+
+            const colorToggle = document.createElement('button');
+            colorToggle.textContent = 'Cambiar Tema';
+            colorToggle.style.position = 'fixed';
+            colorToggle.style.top = '10px';
+            colorToggle.style.right = '10px';
+            colorToggle.style.padding = '10px';
+            colorToggle.style.backgroundColor = 'var(--accent-color)';
+            colorToggle.style.color = 'white';
+            colorToggle.style.border = 'none';
+            colorToggle.style.borderRadius = '5px';
+            colorToggle.style.cursor = 'pointer';
+
+            document.body.appendChild(colorToggle);
+
+            let darkMode = false;
+            colorToggle.addEventListener('click', () => {
+                darkMode = !darkMode;
+                if (darkMode) {
+                    document.documentElement.style.setProperty('--primary-color', '#2C3E50');
+                    document.documentElement.style.setProperty('--secondary-color', '#34495E');
+                    document.documentElement.style.setProperty('--text-color', '#ECF0F1');
+                    document.documentElement.style.setProperty('--accent-color', '#E74C3C');
+                } else {
+                    document.documentElement.style.setProperty('--primary-color', '#FFD1DC');
+                    document.documentElement.style.setProperty('--secondary-color', '#E0F0E3');
+                    document.documentElement.style.setProperty('--text-color', '#4A4A4A');
+                    document.documentElement.style.setProperty('--accent-color', '#B19CD9');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
